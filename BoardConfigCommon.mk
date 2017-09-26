@@ -78,8 +78,7 @@ USE_LEGACY_LOCAL_AUDIO_HAL := true
 USE_CAMERA_STUB := true
 TARGET_USES_NON_TREBLE_CAMERA := true
 BOARD_USES_SNAPDRAGONCAMERA_VERSION := 2
-# TODO remove?
-#TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 # TODO Crypto
 #TARGET_HW_DISK_ENCRYPTION := true
@@ -134,6 +133,8 @@ include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
     $(COMMON_PATH)/sepolicy
+
+include vendor/omni/sepolicy/sepolicy.mk
 
 # Recovery:Start
 
