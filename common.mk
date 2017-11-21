@@ -177,8 +177,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     camera.msm8974
 
-#PRODUCT_PACKAGES += \
-    SnapdragonCamera2
+PRODUCT_PACKAGES += \
+    SnapdragonCamera2 \
+    ParanoidCamera
 
 # NFC
 PRODUCT_COPY_FILES += \
